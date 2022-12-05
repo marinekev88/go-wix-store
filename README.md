@@ -3,6 +3,6 @@
 wix product fetcher for go
 
 # TODO
-** add collection functionality
-** add create functionality
-** potential order handler option
+* add collection functionality
+* add create functionality
+* potential order handler option
