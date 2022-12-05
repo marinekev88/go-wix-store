@@ -6,3 +6,4 @@ wix product fetcher for go
 * add collection functionality
 * add create functionality
 * potential order handler option
+* Replace List() func with individual query sets

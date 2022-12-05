@@ -1,4 +1,4 @@
-module go-wix-store
+module github.com/marinekev88/go-wix-store
 
 go 1.19
 
