@@ -22,13 +22,15 @@ type Stock struct {
 }
 
 type Price struct {
-	Currency        string  `json:"currency,omitempty"`
-	Price           float64 `json:"price,omitempty"`
-	DiscountedPrice float64 `json:"discountedPrice,omitempty"`
-	Formatted       struct {
-		Price           string `json:"price,omitempty"`
-		DiscountedPrice string `json:"discountedPrice,omitempty"`
-	} `json:"formatted,omitempty"`
+	Currency        string         `json:"currency,omitempty"`
+	Price           float64        `json:"price,omitempty"`
+	DiscountedPrice float64        `json:"discountedPrice,omitempty"`
+	Formatted       FormattedPrice `json:"formatted,omitempty"`
+}
+
+type FormattedPrice struct {
+	Price           string `json:"price,omitempty"`
+	DiscountedPrice string `json:"discounted_price,omitempty"`
 }
 
 type AdditionalInfo struct {
